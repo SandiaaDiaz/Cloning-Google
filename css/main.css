@@ -1,0 +1,173 @@
+body{
+    margin:0;
+    padding:0;
+    font-size:13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    /*width ancho height alto*/
+    width: 100%;
+    height: 60px;
+}
+header nav{
+    display: flex;
+    /*justificar hacia la derecha*/
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style:none; /*como son los puntos de la lista, en este caso se eliminan*/
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+nav .nav-right-section a{
+    margin-right: 25px;
+    color:rgb(19, 19, 19);
+
+}
+nav .nav-right-section .menu {
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+}
+/**/
+nav .nav-right-section img{
+    border-radius: 60px;
+    margin-left: 20px ;
+    width: 35px;
+    height: 35px;   
+}
+
+/*mainnnnnnn*/
+main{
+    margin-top: 120px;
+   /**/
+    text-align: center;
+}
+main .main-logo{
+    height: 120px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+main .main-logo img{
+    width: 330px;
+}
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+main .main-input-container{
+    width: 530px;
+    border-radius: 20px;
+    border: 2px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 2px 2px 2px 2px #20212447 ;
+}
+main .main-input .search-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/3031/3031293.png);
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 10px;
+    padding-left: 6%;
+}
+main .main-input .micro-icon{
+    background-image: url(https://www.iconpacks.net/icons/1/free-microphone-icon-342-thumb.png);
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+    padding-left: 1%;
+    cursor: pointer;
+}
+main .main-input .cam-icon{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/883/883746.png);
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    background-repeat: no-repeat;
+    height: 20px;
+    padding-right: 7%;
+}
+main .main-buttons{
+    width: 550px;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    border: none;
+    height: 36px;
+    /*Fondo de botones*/
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    /*Color de letras antes de hover*/
+    color: #3c4043;
+    padding: 0 15px;
+    margin-right: 20px;
+    border: 1px solid #f8f9fa;
+    cursor: pointer;
+
+}
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px rgb(0, 0, 0.1);
+    background-color: #f8f9fa;
+    border:1px solid #dadce0;
+    color:#202120,
+}
+/*----------------Footer-------------*/
+footer{
+    background-color:#f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+    /*Footer contenido en dos columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom: 0;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+}
+footer .footer-left{
+    justify-self: left;
+
+}
+footer .footer-right{
+    justify-self: right;
+    
+}
+footer ul li a{
+    color: #70757a;
+    margin: 10px;
+
+}
